@@ -1,14 +1,12 @@
 import React from 'react'
 import {FormikProps, FormikActions, Form, Field, ErrorMessage, withFormik} from 'formik';
+import Password from './Password';
 
-type LoginProps = {
+export type LoginProps = {
   username: string,
   password: string,
 }
 
-function generatePassword(form: FormikProps<LoginProps>) {
-  form.setFieldValue('password', '123456');
-}
 
 export function MyForm(props: FormikProps<LoginProps>) {
   console.log('props', props);
@@ -22,11 +20,7 @@ export function MyForm(props: FormikProps<LoginProps>) {
         <ErrorMessage name="username" component="span"/>
       </div>
       <div>
-        <label>Password:
-          <Field type='password' name='password'/>
-        </label>
-        <button type='button' onClick={() => generatePassword(props)}>Generate Password</button>
-        <ErrorMessage name="password" component="span"/>
+        <Password/>
       </div>
       <div>
         <button>Login</button>

@@ -1,9 +1,9 @@
-TypeScript React Formik "withFormik" Demo
+TypeScript React Formik "connect" Demo
 =================================
 
-使用`withFormik`可以把一个把formik自己的参数与form的定义分离开。
+使用`connect`可以把一个field的定义独立出来，而它所需要的formik相关的参数，可以由`connect`提供。
 
-注意：还有一个`connect`是用于field级别的，本demo的`withFormik`是form级别的。
+注意：`withFormik`是form级别的，`connect`是field级别的。
 
 ```
 npm install
