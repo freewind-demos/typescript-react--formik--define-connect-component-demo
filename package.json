@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "formik": "1.5.8",
+    "freewind--custom-form-component-demo": "0.6.3",
     "react": "16.9.0",
     "react-dom": "16.9.0"
   },
